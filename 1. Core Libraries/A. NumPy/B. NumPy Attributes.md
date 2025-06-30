@@ -22,7 +22,7 @@ np.array([[1, 2], [3, 4]]).ndim  # 2
 <br>
 
 
-## 2. .shape — Shape of the Array
+## 2. `.shape` — Shape of the Array
 ```bash
 arr.shape
 ```
@@ -94,12 +94,22 @@ np.array([[1, 2], [3, 4]]).T  # [[1, 3], [2, 4]]
 
 
 
-## 7. ndarray.real and ndarray.imag
+## 7. `.real` and `.imag`
 Used for complex number arrays:
 ```bash
 arr.real   # Real part
 arr.imag   # Imaginary part
 ```
+#### Example
+```bash
+arr = np.array([2 + 3j, 4 - 5j, 1 + 0j])
+
+arr.real     # [2.  4.  1.]
+arr.imag     # [ 3. -5.  0.]
+```
+<br>
+
+<br>
 
 ## Example Summary:
 ```bash
