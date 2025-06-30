@@ -21,6 +21,7 @@ arr = np.array([1, 2, 3])
 ```bash
 arr = np.array([[1,2,3],[2,5,6],[8,1,7],[8,9,23]])
 ```
+<br>
 
 ## 3. Creating Arrays with Initial Values
 ### Zeros:
