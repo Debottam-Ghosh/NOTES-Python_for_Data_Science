@@ -67,6 +67,7 @@ b = np.array([[1, 2, 3],
 **Genaral Form:** `arr[row_start:row_stop, col_start:col_stop]`
 
 <br>
+
 | Slice           | Output                        | Meaning                   |
 | --------------- | ----------------------------- | ------------------------- |
 | `b[0:2, 1:3]`   | `[[2 3], [5 6]]`              | Rows 0–1, Columns 1–2     |
