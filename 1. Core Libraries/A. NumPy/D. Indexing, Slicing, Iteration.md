@@ -87,7 +87,7 @@ b = np.array([[1, 2, 3],
 Unlike Python lists, NumPy is optimized to **avoid loops using vectorized operations**. But when you need to iterate, here are the key methods:
 <br>
 
-## Iterating Over 1D Arrays
+## 1. Iterating Over 1D Arrays
 ```bash
 import numpy as np
 
@@ -105,7 +105,7 @@ for item in a:
 
 <br>
 
-## Iterating Over 2D Arrays (Row-wise)
+## 2. Iterating Over 2D Arrays (Row-wise)
 ```bash
 a = np.array([[1, 2], [3, 4]])
 
