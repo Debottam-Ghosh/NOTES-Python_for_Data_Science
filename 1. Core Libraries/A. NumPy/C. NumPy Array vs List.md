@@ -34,7 +34,7 @@ sys.getsizeof(lst)  # Larger
 ```
 <br>
 
-## 3. 📐 Multidimensional Support
+## 3. Multidimensional Support
 NumPy makes working with 2D and 3D arrays easy. Lists require manual nesting and custom logic.
 ```bash
 # NumPy
