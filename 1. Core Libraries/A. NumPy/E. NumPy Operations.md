@@ -23,6 +23,7 @@ b = np.array([4, 5, 6])
 | Modulus        | `b % a`  | `[0 1 0]`        |
 
 <br>
+
 ---
 
 ## 2. Scalar Operations
