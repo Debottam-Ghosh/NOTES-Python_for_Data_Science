@@ -116,7 +116,23 @@ for row in a:
 [1 2]
 [3 4]
 ```
-##### Each row is a 1D NumPy array.
+###### Each row is a 1D NumPy array.
+
+<br>
+
+##  3. Iterating Over Each Element (Element-wise)
+**Use `np.nditer()`:**
+```bash
+for val in np.nditer(a):
+    print(val)
+```
+**Output:**
+```
+1
+2
+3
+4
+```
 
 
 
