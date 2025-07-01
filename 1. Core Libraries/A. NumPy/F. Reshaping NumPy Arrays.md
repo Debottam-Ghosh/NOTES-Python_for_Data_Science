@@ -13,7 +13,7 @@
 arr.reshape(rows, columns)
 ```
 
-##### The total number of elements must remain the same
+###### The total number of elements must remain the same
 
 **Example:**
 ```bash
@@ -31,7 +31,7 @@ a = np.arange(8)
 a.reshape(2, -1)   # → shape (2, 4)
 a.reshape(-1, 4)   # → shape (2, 4)
 ```
-##### **Note:** Only one dimension can be -1
+###### **Note:** Only one dimension can be -1
 
 <br>
 
