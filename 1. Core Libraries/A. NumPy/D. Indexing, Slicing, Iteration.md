@@ -116,7 +116,7 @@ for row in a:
 [1 2]
 [3 4]
 ```
-###### Each row is a 1D NumPy array.
+##### Each row is a 1D NumPy array.
 
 
 
