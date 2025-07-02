@@ -52,6 +52,7 @@ a = np.array([[1, 2], [3, 4]])
 | Sum (by axis) | `np.sum(a, axis=1)` | `[3 7]`          |
 | Mean          | `np.mean(a)`        | `2.5`            |
 | Min/Max       | `np.min(a)`         | `1`              |
+| Argmax/Argmin | `np.argmin(a)`      | `0` (index of the min element in flattened array|         
 | Std/Var       | `np.std(a)`         | `1.118...`       |
 
 <br>
