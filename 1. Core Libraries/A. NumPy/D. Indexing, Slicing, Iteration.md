@@ -64,9 +64,64 @@ print(a[[0, 2], 1:])
 #  [7 8]]
 ```
 
+<br>
 
+## Boolean Array Indexing
+**Boolean indexing** allows you to filter or select elements in a NumPy array based on conditions. 
 
+### Basic Example (1D array)
+```bash
+import numpy as np
 
+a = np.array([10, 15, 20, 25, 30])
+
+# Condition
+mask = a > 20
+
+print(mask)        # [False False False  True  True]
+print(a[mask])     # [25 30]
+```
+###### Or directly:
+
+```bash
+print(a[a > 20])   # [25 30]
+```
+
+<br>
+
+### With 2D Arrays
+```bash
+b = np.array([[1, 2, 3],
+              [4, 5, 6],
+              [7, 8, 9]])
+
+# Select elements greater than 5
+print(b[b > 5])
+# Output: [6 7 8 9]
+```
+###### Note: The output is a 1D array of all elements that satisfy the condition.
+
+<br>
+
+### Boolean indexing with multiple conditions
+```bash
+a = np.array([5, 10, 15, 20, 25, 30, 35])
+
+# Use & for AND, | for OR, ~ for NOT
+result = a[(a > 10) & (a < 30)]
+print(result)  # Output: [15 20 25]
+```
+###### 1. Use `&` for AND, `|` for OR, `~` for NOT because we use bitwise operators on boolean data
+###### 2. Always wrap conditions in parentheses when using &, |, ~
+
+<br>
+
+### Modify Values Using Boolean Indexing
+```bash
+a = np.array([1, 2, 3, 4, 5])
+a[a % 2 == 0] = -1  # Replace even numbers with -1
+print(a)  # Output: [ 1 -1  3 -1  5]
+```
 
 
 
