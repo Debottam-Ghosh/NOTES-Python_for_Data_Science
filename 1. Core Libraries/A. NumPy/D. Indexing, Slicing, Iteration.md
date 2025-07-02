@@ -24,6 +24,54 @@ a[0, 1]      # 2 (row 0, column 1)
 a[1][2]      # 6 (row 1, column 2)
 ```
 <br>
+
+## Fancy Indexing
+By Fancy Indexing, we can access some specific elements (more useful when we want to access disconitinous rows or columns like 1st, 3rd, and 5th) where normal indexing fails)
+
+### 1D Example
+```bash
+import numpy as np
+
+a = np.array([10, 20, 30, 40, 50])
+indices = [0, 2, 4]
+print(a[indices])  # Output: [10 30 50]
+```
+**Or you can directly write:**
+```bash
+print(a[[0,2,4])  # Output: [10 30 50]
+```
+
+### 2D Example
+```bash
+rows = [0, 1, 2]
+cols = [1, 0, 1]
+print(b[rows, cols])  # Output: [2 3 6]
+```
+###### Note that `rows` and `columns` need to be of same length as it returns the (0,1), (1,0), (2,1) column
+
+### Mixing Fancy Indexing and Slicing
+```bash
+a = np.arange(9).reshape(3, 3)
+print(a)
+# [[0 1 2]
+#  [3 4 5]
+#  [6 7 8]]
+
+print(a[[0, 2], 1:])  
+# Select rows 0 and 2, and columns 1 onward
+# Output:
+# [[1 2]
+#  [7 8]]
+```
+
+
+
+
+
+
+
+
+<br>
 <br>
 
 ---
