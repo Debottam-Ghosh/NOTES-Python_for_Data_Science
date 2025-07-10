@@ -13,6 +13,9 @@
 | `df.dtypes`              | Shows the **data type** (`int64`, `object`, etc.) of each column.                                        |
 | `df.info()`              | Gives a **summary**: number of non-null entries, column types, and memory usage.                         |
 | `df.describe()`          | Provides **statistical summary** (count, mean, std, min, max, quartiles) for **numerical columns** only. |
+| `df.index`               | Inspect or manipulate row labels                                                                         |
+| `df.values`              | Access data without labels                                                                               |
+
 
 
 
