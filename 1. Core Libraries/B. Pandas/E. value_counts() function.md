@@ -6,7 +6,7 @@
 
 `value_counts()` counts the number of occurrences of each unique value in a **Series** (i.e., a single column of a DataFrame). 
 <br>
-Remember value_counts() only works on series.
+Remember value_counts() works on series and returns a series.
 
 <br>
 
