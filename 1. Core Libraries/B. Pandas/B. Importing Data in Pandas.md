@@ -7,7 +7,7 @@
 We can import data from excel, csv files etc very easily using pandas.
 <br>
 
-#### Example
+### Example
 ```bash
 import pandas as pd
 df = pd.read_csv("filename.csv")
@@ -16,7 +16,7 @@ df = pd.read_csv("filename.csv")
 <br>
 <br>
 
-#### Basic Functions for Importing Data
+### Basic Functions for Importing Data
 | Function           | File Type          | Example                      |
 | ------------------ | ------------------ | ---------------------------- |
 | `pd.read_csv()`    | CSV                | `pd.read_csv('data.csv')`    |
