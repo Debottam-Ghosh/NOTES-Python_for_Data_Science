@@ -51,3 +51,31 @@ df[['math', 'science']].plot(kind='box')
 # Scatter plot (requires x and y)
 df.plot(kind='scatter', x='height', y='weight')
 ```
+
+<br>
+
+#### Common Parameters:
+| Parameter | Description                                              |
+| --------- | -------------------------------------------------------- |
+| `x`, `y`  | Columns to plot on x and y axes (for scatter/line plots) |
+| `title`   | Set the title of the plot                                |
+| `figsize` | Size of the plot, e.g., `(10, 6)`                        |
+| `grid`    | Show grid lines (True/False)                             |
+| `color`   | Set line/bar colors                                      |
+| `legend`  | Show/hide legend (True/False)                            |
+
+<br>
+
+#### Customizing Example:
+```bash
+df.plot(kind='line', x='Year', y='Sales', title='Annual Sales', figsize=(8,5), grid=True)
+```
+<br>
+
+### Remember:
+- Add import matplotlib.pyplot as plt at the top.
+- Use plt.show() to display plots if not using a notebook.
+- unlike value_counts(), plot() can also be used on the full dataframe but it is used mostly on series in practice.
+
+
+
