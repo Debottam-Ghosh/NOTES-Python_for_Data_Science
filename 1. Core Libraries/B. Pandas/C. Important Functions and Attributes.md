@@ -31,10 +31,6 @@
 <br>
 
 #### Example of .iloc Variations
-python
-Copy
-Edit
-
 ```bash
 import pandas as pd
 # Sample DataFrame
@@ -44,7 +40,7 @@ data = {
     'City': ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix']
 }
 
-df = pd.DataFrame(data) 
+df = pd.DataFrame(data) #Converting the dict to pandas dataframe
 
 print("Original DataFrame:")
 print(df)
