@@ -43,6 +43,8 @@ print(a[[0,2,4])  # Output: [10 30 50]
 
 ### 2D Example
 ```bash
+b = np.array([[1, 2, 3],
+              [4, 5, 6]])
 rows = [0, 1, 2]
 cols = [1, 0, 1]
 print(b[rows, cols])  # Output: [2 3 6]
