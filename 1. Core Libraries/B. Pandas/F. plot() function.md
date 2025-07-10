@@ -75,7 +75,7 @@ df.plot(kind='line', x='Year', y='Sales', title='Annual Sales', figsize=(8,5), g
 ### Remember:
 - Add import matplotlib.pyplot as plt at the top.
 - Use plt.show() to display plots if not using a notebook.
-- unlike value_counts(), plot() can also be used on the full dataframe but it is used mostly on series in practice.
+- unlike `value_counts()`, we can also use `plot()` on the full dataframe but it is used mostly on series in practice.
 
 
 
