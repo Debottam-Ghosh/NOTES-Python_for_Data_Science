@@ -25,12 +25,12 @@
 | ----------------------- | ------------------------------------- |
 | `df['col']`             | Select a column                       |
 | `df[['col1', 'col2']]`  | Select multiple columns               |
-| `df[df['col'] > 10]`    | Boolean filtering                     |
+| `df[df['col'] > 10]`    | Boolean filtering or Masking          |
 | `df.iloc[rows, cols]`   | Select by position (index-based)      |
 | `df.loc[rows, cols]`    | Select by labels (index/column names) |
 <br>
 
-#### Example of .iloc Variations
+#### Example of `.iloc` Variations
 ```bash
 import pandas as pd
 # Sample DataFrame
@@ -67,6 +67,23 @@ print("\n 7. Fancy indexing columns and all rows (columns 2, 0):")
 print(df.iloc[:, [2, 0]])  # City and Name columns
 ```
 
+#### Example of Masking (or Boolean Filtering)
+```bash
+df[df['age']>25]  # all rows with age>25
+
+df[(df[age]>25) & (df[sex]==male)] # all male with age>25
+
+# or you can also do this:
+mask1 = df[age]>25
+mask2 = df[sex]==male
+df[mask1 & mask2] 
+```
+<br>
+
+**Rule of Thumb:**
+- **Basic Syntax:** `df[(condition 1) Bitwise Logical Operator (condition 2) ...]`
+- Use `&`, `|`, `~` for AND, OR, NOT in Pandas.
+- **Always** wrap each condition in parentheses when combining them.
 
 <br>
 <br>
