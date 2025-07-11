@@ -84,5 +84,19 @@ df.sort_values(by='score', inplace=True)
 ```
 ###### This changes the original dataframe
 
+<br>
+<br>
+
+## Most Used Parameters
+| Parameter      | Description                                                         | Example                                           | Output / Effect                                                                 |
+| -------------- | ------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------------------------- |
+| `by`           | Column or list of columns to sort by                                | `df.sort_values(by='score')`                      | Sorts DataFrame rows by the `score` column                                      |
+| `ascending`    | Sort order: `True` = ascending (default), `False` = descending      | `df.sort_values(by='score', ascending=False)`     | Sorts scores from high to low                                                   |
+| `inplace`      | By default, `False`. If `True`, updates the DataFrame in place                           | `df.sort_values(by='score', inplace=True)`        | Modifies `df` directly, no need for reassignment                                |
+| `na_position`  | Where to place NaN values: `'first'` or `'last'`(default)                    | `df.sort_values(by='score', na_position='first')` | NaN scores will appear at the top                                               |s
+| `kind`         | Sorting algorithm: `'quicksort'`, `'mergesort'`, `'heapsort'`, etc. | `df.sort_values(by='score', kind='mergesort')`    | Needed when you want a **stable sort** (e.g., preserving order of equal values) |
+| `axis`         | Sort rows (`0`, default) or columns (`1`)                           | `df.sort_values(by='score', axis=0)`              | Usually left as default for sorting rows                                        |
+
+
 
 
