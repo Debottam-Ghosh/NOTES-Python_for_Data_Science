@@ -1,0 +1,88 @@
+#
+# Chapter 6: sort_values() function
+
+<br>
+<br>
+
+`sort_values()` is used to sort a Series or DataFrame by values (not by index).
+
+<br>
+
+## For Series
+```bash
+import pandas as pd
+
+s = pd.Series([5, 2, 8, 3], index=['a', 'b', 'c', 'd'])
+
+# Sort (by default in ascending order)
+s.sort_values()
+```
+**Output:**
+```bash
+b    2
+d    3
+a    5
+c    8
+dtype: int64
+```
+<br>
+
+### Descending order:
+```bash
+s.sort_values(ascending=False)
+```
+
+<br>
+<br>
+
+
+
+
+## For DataFrame
+```bash
+df = pd.DataFrame({
+    'name': ['Alice', 'Bob', 'Charlie'],
+    'score': [85, 92, 78]
+})
+
+# Sort rows by 'score' column
+df.sort_values(by='score')
+```
+**Output:**
+```bash
+     name  score
+2  Charlie     78
+0    Alice     85
+1      Bob     92
+```
+### Descending:
+```bash
+df.sort_values(by='score', ascending=False)
+```
+
+<br>
+<br>
+
+## Sort by Multiple Columns
+```bash
+df = pd.DataFrame({
+    'name': ['Alice', 'Bob', 'Charlie', 'Bob'],
+    'score': [85, 92, 78, 75]
+})
+
+df.sort_values(by=['name', 'score'])
+```
+###### First sorts by name, then within the same name, by score.
+
+<br>
+<br>
+
+## In-place Sorting
+By default, sort_values() returns a new object without changing the original one. But to sort in place:
+```bash
+df.sort_values(by='score', inplace=True)
+```
+###### This changes the original dataframe
+
+
+
