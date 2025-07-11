@@ -76,6 +76,7 @@ dtype: int64
 ```
 <br>
 Similarly, you can do:
+
 ```
 vc - 1
 vc*3
