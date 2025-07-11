@@ -1,5 +1,5 @@
 #
-# Chapter 6: plot() function
+# Chapter 7: plot() function
 
 <br>
 <br>
