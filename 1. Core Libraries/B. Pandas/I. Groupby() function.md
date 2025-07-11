@@ -13,6 +13,7 @@
 df.groupby('column_name')
 ```
 You usually combine it with an aggregation function:
+
 ```bash
 df.groupby('column_name')['other_column'].sum()
 ```
