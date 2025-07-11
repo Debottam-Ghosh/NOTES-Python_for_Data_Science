@@ -20,7 +20,8 @@ Pandas is widely used in data science, finance, machine learning, and any area w
 <br>
 
 ## DataFrame and Series:
-Pandas treats a dataset(csv, excel etc.) as a **DataFrame** and when you fetch one row or one column, it is treated as a **Series**
+Pandas treats a dataset(csv, excel etc.) as a **DataFrame** and when you fetch one row or one column, it is treated as a **Series**.
+<br>
 In DataFrame, there are rows and columns and in series, there are index and values
 
 
