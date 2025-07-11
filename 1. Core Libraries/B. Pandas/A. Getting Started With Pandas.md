@@ -19,9 +19,74 @@ Pandas is widely used in data science, finance, machine learning, and any area w
 
 <br>
 
-### DataFrame and Series:
+## DataFrame and Series:
 Pandas treats a dataset(csv, excel etc.) as a **DataFrame** and when you fetch one row or one column, it is treated as a **Series**
 In DataFrame, there are rows and columns and in series, there are index and values
+
+
+<br>
+
+### Creating a Pandas Series
+A Series is a one-dimensional labeled array — like a single column of data.
+```bash
+# Creating a Series from a list
+scores = pd.Series([85, 90, 78, 92])
+print(scores)
+```
+**Output**
+```bash
+0    85
+1    90
+2    78
+3    92
+dtype: int64
+```
+
+<br>
+
+You can also give custom index:
+```bash
+scores = pd.Series([85, 90, 78, 92], index=["Alice", "Bob", "Charlie", "David"])
+print(scores)
+```
+**Output**
+```bash
+Alice      85
+Bob        90
+Charlie    78
+David      92
+dtype: int64
+```
+
+<br>
+<br>
+
+### Creating a Pandas DataFrame
+A DataFrame is a two-dimensional table with rows and columns.
+
+```bash
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Math': [85, 90, 78, 92],
+    'Science': [88, 85, 82, 95]
+}
+
+df = pd.DataFrame(data)
+print(df)
+```
+
+**Output:**
+```bash
+      Name  Math  Science
+0    Alice    85       88
+1      Bob    90       85
+2  Charlie    78       82
+3    David    92       95
+```
+
+
+
+
 
 
 
