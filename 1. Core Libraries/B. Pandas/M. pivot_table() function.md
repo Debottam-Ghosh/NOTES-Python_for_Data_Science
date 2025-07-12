@@ -89,9 +89,36 @@ df.pivot_table(index=['Region', 'Month'], columns='Product', values='Sales', agg
 | West   | Feb   | 150   | 250    |
 | West   | Jan   | NaN   | 100    |
 
-- index=\['Region', 'Month']: Grouped by both Region and Month
-- columns='Product': Spread Apple and Banana as columns
+- `index=\['Region', 'Month']`: Grouped by both Region and Month
+- `columns='Product'`: Spread Apple and Banana as columns
 
+<br>
+<br>
+
+## Multiple values and aggfunc Example
+
+<br>
+
+### Code for Pivot Table:
+```bash
+df.pivot_table(
+    index='Region',
+    columns='Product',
+    values=['Sales', 'Quantity'],
+    aggfunc=['sum', 'mean']
+)
+```
+<br>
+
+### Output:
+|        |      | Apple | Banana |       |      |
+| ------ | ---- | ----- | ------ | ----- | ---- |
+|        |      | **Sales** | **Qty**    | **Sales** | **Qty**  |
+| **Region** |      |       |        |       |      |
+| **East**   | mean | 200.0 | 20.0   | 200.0 | 20.0 |
+|        | sum  | 400   | 40     | 200   | 20   |
+| **West**   | mean | 150.0 | 15.0   | 250.0 | 25.0 |
+|        | sum  | 150   | 15     | 250   | 25   |
 
 
 
