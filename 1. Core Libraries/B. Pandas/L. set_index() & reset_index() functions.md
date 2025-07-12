@@ -77,11 +77,12 @@ df.reset_index(drop=True)
 
 **Result:**
 
-| index | Name    | Score |
-| ----- | ------- | ----- |
-| 0     | Alice   | 90    |
-| 1     | Bob     | 85    |
-| 2     | Charlie | 95    |
+| Name    | Score |
+| ------- | ----- |
+| Alice   | 90    |
+| Bob     | 85    |
+| Charlie | 95    |
+
 
 
 
