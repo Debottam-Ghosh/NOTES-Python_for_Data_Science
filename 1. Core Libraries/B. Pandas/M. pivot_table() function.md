@@ -98,7 +98,7 @@ df.pivot_table(index=['Region', 'Month'], columns='Product', values='Sales', agg
 | West   | Feb   | 150   | 250    |
 | West   | Jan   | NaN   | 100    |
 
-- `index=\['Region', 'Month']`: Grouped by both Region and Month
+- `index=['Region', 'Month']`: Grouped by both Region and Month
 - `columns='Product'`: Spread Apple and Banana as columns
 
 <br>
@@ -139,9 +139,9 @@ df.pivot_table(
 
 
 You’ll see a multi-level column index, grouped by:
-- Aggregation Function → sum, mean
-- Metric → Sales, Quantity
-- Product → Apple, Banana
+- Aggregation Function → `sum`, `mean`
+- Metric → `Sales`, `Quantity`
+- Product → `Apple`, `Banana`
 
 
 
