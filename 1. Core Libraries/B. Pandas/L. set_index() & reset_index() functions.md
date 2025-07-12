@@ -37,10 +37,13 @@ df.set_index('ID')
 | 3  | Charlie | 95    |
 ##### Now ID is no longer a column — it’s the index.
 <br>
+
 ---
+
 <br>
 
-## reset_index() in pandas
+
+## `reset_index()` in pandas
 ### What it does:
 - Converts the index back into a column.
 - Resets index to default [0, 1, 2, …].
