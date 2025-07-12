@@ -31,7 +31,7 @@ df1.merge(df2, how='inner', left_on=None, right_on=None)
 ## Types of Joins
 | Join Type | Description                               | Keeps                     |
 | --------- | ----------------------------------------- | ------------------------- |
-| `'inner'` | Only matching rows in both                | Common records only       |
+| `'inner'` | Only matching rows in both (DEFAULT)      | Common records only       |
 | `'outer'` | All rows from both, fill missing with NaN | Union of all rows         |
 | `'left'`  | All rows from left + matches from right   | Left DataFrame dominates  |
 | `'right'` | All rows from right + matches from left   | Right DataFrame dominates |
