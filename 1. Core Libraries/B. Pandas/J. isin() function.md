@@ -8,8 +8,7 @@
 
 <br>
 
-## 
-🧾 Basic Syntax:
+## Basic Syntax:
 ```bash
 df['column'].isin([value1, value2, ...])
 ```
