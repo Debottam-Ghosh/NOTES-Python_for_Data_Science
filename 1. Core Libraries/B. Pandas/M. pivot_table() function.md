@@ -72,6 +72,15 @@ aggfunc=lambda x: x.max() - x.min()
 <br>
 
 ## Multiple Index Example
+### Data:
+| Region | Product | Month | Sales |
+| ------ | ------- | ----- | ----- |
+| East   | Apple   | Jan   | 100   |
+| East   | Banana  | Jan   | 200   |
+| West   | Apple   | Feb   | 150   |
+| West   | Banana  | Feb   | 250   |
+| East   | Apple   | Feb   | 300   |
+| West   | Banana  | Jan   | 100   |
 
 <br>
 
@@ -96,6 +105,14 @@ df.pivot_table(index=['Region', 'Month'], columns='Product', values='Sales', agg
 <br>
 
 ## Multiple values and aggfunc Example
+### Data:
+| Region | Product | Sales | Quantity |
+| ------ | ------- | ----- | -------- |
+| East   | Apple   | 100   | 10       |
+| East   | Banana  | 200   | 20       |
+| West   | Apple   | 150   | 15       |
+| West   | Banana  | 250   | 25       |
+| East   | Apple   | 300   | 30       |
 
 <br>
 
@@ -115,10 +132,16 @@ df.pivot_table(
 | ------ | ---- | ----- | ------ | ----- | ---- |
 |        |      | **Sales** | **Qty**    | **Sales** | **Qty**  |
 | **Region** |      |       |        |       |      |
-| **East**   | mean | 200.0 | 20.0   | 200.0 | 20.0 |
-|        | sum  | 400   | 40     | 200   | 20   |
-| **West**   | mean | 150.0 | 15.0   | 250.0 | 25.0 |
-|        | sum  | 150   | 15     | 250   | 25   |
+| **East**   | **mean** | 200.0 | 20.0   | 200.0 | 20.0 |
+|        | **sum**  | 400   | 40     | 200   | 20   |
+| **West**   | **mean** | 150.0 | 15.0   | 250.0 | 25.0 |
+|        | **sum**  | 150   | 15     | 250   | 25   |
+
+
+You’ll see a multi-level column index, grouped by:
+- Aggregation Function → sum, mean
+- Metric → Sales, Quantity
+- Product → Apple, Banana
 
 
 
