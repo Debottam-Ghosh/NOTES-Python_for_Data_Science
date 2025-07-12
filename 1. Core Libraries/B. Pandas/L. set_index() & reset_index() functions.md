@@ -74,6 +74,11 @@ df.reset_index(drop=True)
 ```
 - This removes the current index without adding it as a column.
 - Keeps the data clean and avoids unnecessary columns.
+| index | Name    | Score |
+| ----- | ------- | ----- |
+| 0     | Alice   | 90    |
+| 1     | Bob     | 85    |
+| 2     | Charlie | 95    |
 
 
 
