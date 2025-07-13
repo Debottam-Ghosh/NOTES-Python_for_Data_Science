@@ -84,6 +84,36 @@ df.reset_index(drop=True)
 | Charlie | 95    |
 
 
+<br>
+<br>
+
+### TRICK that I follow:
+You can use reset_index() for converting a series to a dataframe!
+```bash
+s = pd.Series([85, 90, 78], name='Score')
+print(s)
+```
+#### Output is a series here:
+```
+0    85
+1    90
+2    78
+Name: Score, dtype: int64
+```
+<br>
+
+### But we can convert it to a dataframe using:
+```bash
+df=s.reset_index()
+```
+**Output:**
+| index | Score |
+| ----- | ----- |
+| 0     | 85    |
+| 1     | 90    |
+| 2     | 78    |
+
+
 
 
 
