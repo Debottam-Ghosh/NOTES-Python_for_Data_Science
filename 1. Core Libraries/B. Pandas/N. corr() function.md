@@ -31,6 +31,13 @@ DataFrame.corr(method=__)
 
 <br>
 
+**Code:**
+```bash
+print(df.corr())
+```
+
+<br>
+
 **Output:**
 |         | Math  | Science | English |
 | ------- | ----- | ------- | ------- |
