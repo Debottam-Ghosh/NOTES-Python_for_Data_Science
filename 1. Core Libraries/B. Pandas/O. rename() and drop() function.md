@@ -79,9 +79,13 @@ df.rename(columns={'Math': 'Mathematics', 'Sci':'Science', 'Eng': 'English'}, in
 | Student 1     | 90          | 88      | 70  |
 | Student 2     | 80          | 85      | 60  |
 
+<br>
+<br>
 
 ---
 
+<br>
+<br>
 
 # `drop()` function
 
