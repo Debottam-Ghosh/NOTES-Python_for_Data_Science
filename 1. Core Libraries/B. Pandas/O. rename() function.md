@@ -47,5 +47,33 @@ df.rename(columns=str.upper)  # All columns to uppercase
 | ----- | ---- | ------- | ------- |
 | 0     | 90   | 88      | 70      |
 | 1     | 80   | 85      | 60      |
-###### Name of the 'Index' column will not changed
+###### NOTE: Name of the 'Index' column will not changed.
+
+<br>
+<br>
+
+### You can also change the indexes' names (Not the column name) also:
+```bash
+df.rename(index={'0': 'Student1', '1': 'Student2'})
+```
+**Output:**
+| Index | Math  | Sci | Eng |
+| ----- | ----------- | ------- | --- |
+| Student 1     | 90          | 88      | 70  |
+| Student 2     | 80          | 85      | 60  |
+
+
+<br>
+
+<br>
+
+You can change indexes and columns simultaneously like:
+```bash
+df.rename(columns={'Math': 'Mathematics', 'Sci':'Science', 'Eng': 'English'}, index={'0': 'Student1', '1': 'Student2'})
+```
+**Output:**
+| Index | Mathematocs  | Science | English |
+| ----- | ----------- | ------- | --- |
+| Student 1     | 90          | 88      | 70  |
+| Student 2     | 80          | 85      | 60  |
 
