@@ -77,13 +77,34 @@ print(df)
 ```
 
 **Output:**
+| Index | Name    | Math | Science |
+| ----- | ------- | ---- | ------- |
+| 0     | Alice   | 85   | 88      |
+| 1     | Bob     | 90   | 85      |
+| 2     | Charlie | 78   | 82      |
+| 3     | David   | 92   | 95      |
+
+Obviously you can give custom index in this case too:
 ```bash
-      Name  Math  Science
-0    Alice    85       88
-1      Bob    90       85
-2  Charlie    78       82
-3    David    92       95
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Math': [85, 90, 78, 92],
+    'Science': [88, 85, 82, 95]
+}
+
+index = ['Student_1', 'Student_2', 'Student_3', 'Student_4']
+
+df = pd.DataFrame(data, index=index)
+print(df)
+nt(df)
 ```
+**Output:**
+|            | Name    | Math | Science |
+| ---------- | ------- | ---- | ------- |
+| Student\_1 | Alice   | 85   | 88      |
+| Student\_2 | Bob     | 90   | 85      |
+| Student\_3 | Charlie | 78   | 82      |
+| Student\_4 | David   | 92   | 95      |
 
 
 
