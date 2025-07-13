@@ -21,13 +21,14 @@ df.sample(n=3)
 ```
 df.sample(frac=0.2)
 ```
-##### n and frac are mutually exclusive — use one at a time.
+###### n and frac are mutually exclusive — use one at a time.
 <br>
 
 ### 3. Sample with replacement (allows duplicates)
 ```
 df.sample(n=5, replace=True)
 ```
+<br>
 
 ### 4. Sample with a fixed random seed
 ```
