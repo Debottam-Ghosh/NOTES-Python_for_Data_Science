@@ -27,7 +27,7 @@ In DataFrame, there are rows and columns and in series, there are index and valu
 
 <br>
 
-### Creating a Pandas Series
+### `pd.Series()` - Creating a Pandas Series
 A Series is a one-dimensional labeled array — like a single column of data.
 ```bash
 # Creating a Series from a list
@@ -62,7 +62,7 @@ dtype: int64
 <br>
 <br>
 
-### Creating a Pandas DataFrame
+### `pd.DataFrame()` - Creating a Pandas DataFrame
 A DataFrame is a two-dimensional table with rows and columns.
 
 ```bash
