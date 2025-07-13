@@ -45,7 +45,7 @@ dtype: int64
 
 <br>
 
-You can also give custom index:
+#### You can also give custom index:
 ```bash
 scores = pd.Series([85, 90, 78, 92], index=["Alice", "Bob", "Charlie", "David"])
 print(scores)
@@ -84,7 +84,7 @@ print(df)
 | 2     | Charlie | 78   | 82      |
 | 3     | David   | 92   | 95      |
 
-Obviously you can give custom index in this case too:
+#### Obviously you can give custom index in this case too:
 ```bash
 data = {
     'Name': ['Alice', 'Bob', 'Charlie', 'David'],
