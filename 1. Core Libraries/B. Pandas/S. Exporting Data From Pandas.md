@@ -33,7 +33,7 @@ df.to_csv('data.csv', columns=['Name', 'Age'], index=False)  # index=False is us
 
 ### Notes:
 - Some formats (like Excel, SQL, etc.) require optional dependencies like `openpyxl`, `sqlalchemy`, etc.
-- Use index=False if you don’t want row indexes in output files (especially in CSV, Excel).
+- Use `index=False` if you don’t want row indexes in output files (especially in CSV, Excel).
 - Use `read_*()` equivalents to read them back (e.g., `read_csv()`, `read_json()`).
 
 
