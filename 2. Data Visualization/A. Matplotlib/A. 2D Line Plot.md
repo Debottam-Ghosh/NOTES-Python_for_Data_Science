@@ -78,3 +78,26 @@ plt.show()
 ```
 <img width="1461" height="524" alt="image" src="https://github.com/user-attachments/assets/77d237e8-9a5f-4198-adcb-6b956e360e5c" />
 
+<br>
+<br>
+
+## Adding Grid (`plt.grid(True)`)
+```bash
+x = [1, 2, 3, 4]
+y = [1, 4, 9, 16]
+
+plt.plot(x, y)
+plt.grid(True)
+
+plt.show()
+```
+<img width="1452" height="511" alt="image" src="https://github.com/user-attachments/assets/13dc2424-13b0-455b-87a0-937103ede4cf" />
+
+<br>
+<br>
+
+## Extras:
+- Use plt.figure(figsize=(w, h))` to control plot size.
+- Use `plt.savefig('filename.png')` to save the plot.
+
+
