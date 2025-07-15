@@ -86,7 +86,43 @@ plt.xticks(rotation=50)
 ```
 ###### - Here `50` is the angle. Clerly `rotation=90` will make the labels vertical
 ###### - Use this when there are many categories on x axis or their names are long to avoid overlapping
-<img width="1453" height="621" alt="image" src="https://github.com/user-attachments/assets/3fe63afe-507f-42f2-862a-4b8ea682ef11" />
+###### - You can use `yticks` in the same way
+<img width="1458" height="606" alt="image" src="https://github.com/user-attachments/assets/9b14f281-247a-4ce8-93ae-72bdf567e951" />
+
+<br>
+<br>
+
+## Stacked Column Chart:
+```bash
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.DataFrame(data=
+                  {'Fruit':['Apple','Mango','Banana'], 
+                   '2021':[50,75,60], 
+                   '2022':[80,70,55], 
+                   '2023':[40,80,60]})
+
+x = df['Fruit']
+y1 = df['2021']
+y2 = df['2022']
+y3 = df['2023']
+
+# Plotting stacked bar chart
+plt.bar(x, y1, label='2021')
+plt.bar(x, y2, bottom=y1, label='2022')
+plt.bar(x, y3, bottom=y1 + y2, label='2023')
+
+plt.xlabel("Fruit")
+plt.ylabel("Sales")
+plt.title("Fruit Sales Over 3 Years")
+
+plt.legend()
+plt.show()
+```
+###### You can't use a list as `Fruit` directly, you need to convert that into np.array()
+<img width="1459" height="573" alt="image" src="https://github.com/user-attachments/assets/bb90e4a1-d130-49c3-b238-bfb8e6942432" />
+
 
 <br>
 <br>
