@@ -1,5 +1,6 @@
 #
-# Chapter 3: Bar Chart - Plotting Categorical variable vs Aggregate (Numerical) Variable
+# Chapter 3: Bar Chart 
+## - Plotting Categorical variable vs Aggregate (Numerical) Variable
 
 <br>
 <br>
