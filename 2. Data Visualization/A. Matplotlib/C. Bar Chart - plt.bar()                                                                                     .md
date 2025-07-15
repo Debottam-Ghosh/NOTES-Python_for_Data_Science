@@ -46,14 +46,14 @@ plt.show()
 <br>
 <br>
 
-## Changing Colour, Edge-Colour, Width of the Bar:
+## Changing Colour, Edge-Colour, Width and Transparency (`alpha=`) of the Bar:
 ```bash
 import matplotlib.pyplot as plt
 
 categories = ['Apple', 'Banana', 'Mango', 'Orange']
 sales = [40, 70, 30, 85]
 
-plt.bar(categories, sales, color='orange', edgecolor='black', width=0.6)
+plt.bar(categories, sales, color='orange', edgecolor='black', width=0.6, alpha=0.8)
 
 plt.title("Fruit Sales")
 plt.xlabel("Fruit")
