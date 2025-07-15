@@ -68,6 +68,29 @@ plt.show()
 <br>
 <br>
 
+## plt.xticks()
+<br>
+
+### 1. Set custom tick positions and labels:
+```bash
+plt.xticks([0, 1, 2], ['Low', 'Medium', 'High'])
+```
+###### Note: [0,1,2] are indices. So you don't need to write the old labels
+<img width="1452" height="564" alt="image" src="https://github.com/user-attachments/assets/d259561b-efab-4b7d-8b83-5f4055144331" />
+
+<br>
+
+### 2. Set vertical or angled labels:
+```bash
+plt.xticks(rotation=50)
+```
+###### - Here `50` is the angle. Clerly `rotation=90` will make the labels vertical
+###### - Use this when there are many categories on x axis or their names are long to avoid overlapping
+<img width="1453" height="621" alt="image" src="https://github.com/user-attachments/assets/3fe63afe-507f-42f2-862a-4b8ea682ef11" />
+
+<br>
+<br>
+
 ## Horizontal Bar Chart (`plt.barh()`):
 ```bash
 plt.barh(categories, sales, color='green')
@@ -81,5 +104,5 @@ plt.show()
 ###### Everything you learned in `plt.bar()` is equally applicable to `plt.barh()`
 <img width="1460" height="572" alt="image" src="https://github.com/user-attachments/assets/0c7d6ccc-8278-4991-8fae-ca55b940f644" />
 
-## 
+
 
