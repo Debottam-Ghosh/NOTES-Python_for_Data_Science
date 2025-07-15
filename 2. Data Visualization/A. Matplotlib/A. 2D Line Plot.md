@@ -64,3 +64,17 @@ plt.show()
 <img width="1456" height="547" alt="image" src="https://github.com/user-attachments/assets/c02f0add-10ed-49ac-8ecb-29a3ddf0d8e3" />
 
 
+<br>
+<br>
+
+## Customizing with Colour (`color=`), Line Style (`linestyle=`), Line Width (`linewidth=`), Marker (`marker=`)
+```bash
+x = [1, 2, 3, 4]
+y = [1, 4, 9, 16]
+
+plt.plot(x, y, color='green', linestyle='--', linewidth=2, marker='o', label='Data Line')
+
+plt.show()
+```
+<img width="1461" height="524" alt="image" src="https://github.com/user-attachments/assets/77d237e8-9a5f-4198-adcb-6b956e360e5c" />
+
