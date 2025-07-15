@@ -43,4 +43,20 @@ plt.show()
 <img width="1457" height="568" alt="image" src="https://github.com/user-attachments/assets/253e5df1-e242-4e73-a4b9-54d98b469e87" />
 
 
+<br>
+<br>
+
+## Multiple Histograms:
+```bash
+data1 = np.random.normal(60, 10, 200)
+data2 = np.random.normal(40, 15, 200)
+
+plt.hist([data1, data2], bins=15, label=['Group A', 'Group B'], alpha=0.6)
+plt.legend()
+plt.title("Comparison Histogram")
+
+plt.show()
+```
+<img width="1448" height="537" alt="image" src="https://github.com/user-attachments/assets/183e75f8-1d21-4bae-bb11-48b455a9b40d" />
+
 
