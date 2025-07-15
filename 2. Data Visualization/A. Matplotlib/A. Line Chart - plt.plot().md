@@ -1,5 +1,5 @@
 #
-# Chapter 1: 2D Line Plot - Plotting Categorical vs Numerical 
+# Chapter 1: Line Chart - Plotting Categorical vs Numerical 
 
 <br>
 <br>
