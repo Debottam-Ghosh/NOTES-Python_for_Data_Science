@@ -1,5 +1,5 @@
 #
-# Chapter 1: 2D Line Plot in Matplotlib
+# Chapter 1: 2D Line Plot - Plotting Categorical vs Numerical 
 
 <br>
 <br>
