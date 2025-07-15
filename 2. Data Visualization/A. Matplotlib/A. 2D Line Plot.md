@@ -97,7 +97,26 @@ plt.show()
 <br>
 
 ## Extras:
-- Use plt.figure(figsize=(w, h))` to control plot size.
-- Use `plt.savefig('filename.png')` to save the plot.
+- Use plt.figure(figsize=(w, h))` to control plot size and use it **before** `plt.plot()`
+- Use `plt.savefig('filename.png')` to save the plot and use it **before** `plt.show()`
+```
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+# Create a figure with custom size (width=8 inches, height=5 inches)
+plt.figure(figsize=(8, 5))
+
+# Plot the data
+plt.plot(x, y)
+
+plt.grid(True)
+
+# Save the figure to a file
+plt.savefig("line_plot.png")  # Saves in the current directory
+
+# Display the plot
+plt.show()
+```
 
 
