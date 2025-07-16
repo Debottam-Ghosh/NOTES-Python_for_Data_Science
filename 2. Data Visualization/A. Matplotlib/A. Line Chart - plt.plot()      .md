@@ -58,7 +58,7 @@ plt.legend()
 
 plt.show()
 ```
-**Remember:** If you don't give labels (`.label=`) on the lines ("Squared" or "Linear"), plt.legend will throw error.
+**Remember:** If you don't give labels (`label=`) on the lines ("Squared" or "Linear"), plt.legend will throw error.
 <br>
 
 <img width="1456" height="547" alt="image" src="https://github.com/user-attachments/assets/c02f0add-10ed-49ac-8ecb-29a3ddf0d8e3" />
