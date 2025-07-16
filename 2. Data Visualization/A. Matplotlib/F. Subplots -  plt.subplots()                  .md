@@ -47,8 +47,7 @@ ax[1].set_title('Plot 2')
 
 plt.show()
 ```
-###### Remember: In case of subplots, `plt.title()` will not work. Instead of that, `ax[i].set_title` must be used.
-###### Similarly, `ax[i].set_xlabel()`, `ax[i].set_ylabel()`should be used
+###### Remember: In case of subplots, `plt.title()` will not work. Instead of that, `ax[i].set_title` must be used. <br> Similarly, `ax[i].set_xlabel()`, `ax[i].set_ylabel()`should be used
 <img width="1458" height="484" alt="image" src="https://github.com/user-attachments/assets/dd909c0a-11c8-4b06-a29a-3f6075319904" />
 
 
