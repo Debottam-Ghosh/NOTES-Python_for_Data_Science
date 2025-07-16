@@ -60,3 +60,23 @@ plt.show()
 <img width="1448" height="537" alt="image" src="https://github.com/user-attachments/assets/183e75f8-1d21-4bae-bb11-48b455a9b40d" />
 
 
+<br>
+<br>
+
+## Logarithmic Scale (`log=True`):
+In Matplotlib, you can use a **logarithmic scale** in a histogram when your data has a long tail (e.g., some values are much larger than others). 
+<br> In such cases the smaller values cannot expressed on the chart properly.
+
+```bash
+# Suppose we have some data as df
+
+plt.hist(data, log=True)
+
+plt.show()
+```
+<img width="1121" height="195" alt="image" src="https://github.com/user-attachments/assets/7008a618-d1bf-4b2e-8721-fae20c5d59d8" />
+
+
+
+
+
