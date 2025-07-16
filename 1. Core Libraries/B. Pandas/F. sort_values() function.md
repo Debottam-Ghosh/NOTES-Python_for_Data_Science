@@ -9,7 +9,7 @@
 <br>
 
 ## For Series
-```bash
+```python
 import pandas as pd
 
 s = pd.Series([5, 2, 8, 3], index=['a', 'b', 'c', 'd'])
@@ -18,7 +18,7 @@ s = pd.Series([5, 2, 8, 3], index=['a', 'b', 'c', 'd'])
 s.sort_values()
 ```
 **Output:**
-```bash
+```python
 b    2
 d    3
 a    5
@@ -28,7 +28,7 @@ dtype: int64
 <br>
 
 ### Descending order:
-```bash
+```python
 s.sort_values(ascending=False)
 ```
 
@@ -39,7 +39,7 @@ s.sort_values(ascending=False)
 
 
 ## For DataFrame
-```bash
+```python
 df = pd.DataFrame({
     'name': ['Alice', 'Bob', 'Charlie'],
     'score': [85, 92, 78]
@@ -49,7 +49,7 @@ df = pd.DataFrame({
 df.sort_values(by='score')
 ```
 **Output:**
-```bash
+```python
      name  score
 2  Charlie     78
 0    Alice     85
@@ -64,15 +64,15 @@ df.sort_values(by='score', ascending=False)
 <br>
 
 ## Sort by Multiple Columns
-```bash
+```python
 df = pd.DataFrame({
     'name': ['Alice', 'Bob', 'Charlie', 'Bob'],
     'score': [85, 92, 78, 75]
 })
 
-df.sort_values(by=['name', 'score'])
+df.sort_values(by=['name', 'score'], ascending=[False, True])
 ```
-###### First sorts by name, then within the same name, by score.
+###### First sorts by name in descending, then within the same name, by score in ascending order.
 
 <br>
 <br>
