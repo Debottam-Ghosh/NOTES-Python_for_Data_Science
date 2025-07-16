@@ -22,7 +22,7 @@ df.groupby('column_name')['other_column'].sum()
 <br>
 
 ## Example:
-```bash
+```python
 import pandas as pd
 
 data = {
