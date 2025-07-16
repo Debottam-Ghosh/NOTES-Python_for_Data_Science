@@ -29,3 +29,20 @@ df.replace({0: None, -1: 999}) # Replaces all 0s with None and all -1s with 999
 ```bash
 df.replace({'column1': {0: None}, 'column2': {-1: 999}})
 ```
+
+<br>
+<br>
+
+## Append a New Row:
+```python
+df.loc[len(df)] = ['David', 40]
+```
+
+
+<br>
+
+## To Delete the Last Row (or Any Row)
+```python
+df = df.drop(index=3)  # drops row with index = 3
+df = df.drop(index=len(df)-1)  # drops the last row
+```
