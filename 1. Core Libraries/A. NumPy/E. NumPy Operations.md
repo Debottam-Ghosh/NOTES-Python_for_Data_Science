@@ -6,7 +6,7 @@
 
 ## 1. Arithmetic Operations (Element-wise)
 Given:
-```bash
+```python
 import numpy as np
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
@@ -29,7 +29,7 @@ b = np.array([4, 5, 6])
 ## 2. Scalar Operations
 All operations apply to each element of the array.
 
-```bash
+```python
 a + 10       # [11 12 13]
 a * 2        # [2 4 6]
 np.sqrt(a)   # [1. 1.41 1.73]
@@ -40,7 +40,7 @@ np.sqrt(a)   # [1. 1.41 1.73]
 ---
 
 ## 3. Aggregation Operations
-```bash
+```python
 a = np.array([[1, 2], [3, 4]])
 ```
 <br>
@@ -60,7 +60,7 @@ a = np.array([[1, 2], [3, 4]])
 ---
 
 ## 4. Matrix Operations
-```bash
+```python
 A = np.array([[1, 2], [3, 4]])
 B = np.array([[5, 6], [7, 8]])
 ```
@@ -78,7 +78,7 @@ B = np.array([[5, 6], [7, 8]])
 ---
 
 ## 5. Comparison Operations
-```bash
+```python
 a = np.array([1, 2, 3])
 b = np.array([2, 2, 2])
 ```
