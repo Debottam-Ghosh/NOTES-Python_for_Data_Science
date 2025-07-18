@@ -9,13 +9,13 @@
 
 
 ## 1. `.ndim` — Number of Dimensions
-```bash
+```python
 arr.ndim
 ```
 Returns the number of axes (dimensions).
 
 #### Example:
-```bash
+```python
 np.array([1, 2, 3]).ndim  # 1
 np.array([[1, 2], [3, 4]]).ndim  # 2
 ```
@@ -23,13 +23,13 @@ np.array([[1, 2], [3, 4]]).ndim  # 2
 
 
 ## 2. `.shape` — Shape of the Array
-```bash
+```python
 arr.shape
 ```
 Returns a tuple showing the size in each dimension.
 
 #### Example:
-```bash
+```python
 np.array([[1, 2], [3, 4]]).shape  # (2, 2)
 ```
 <br>
@@ -37,13 +37,13 @@ np.array([[1, 2], [3, 4]]).shape  # (2, 2)
 
 
 ## 3. `.size` — Total Number of Elements
-```bash
+```python
 arr.size
 ```
 Returns the total number of elements in the array.
 
 #### Example:
-```bash
+```python
 np.array([[1, 2], [3, 4]]).size  # 4
 ```
 
@@ -52,13 +52,13 @@ np.array([[1, 2], [3, 4]]).size  # 4
 
 
 ## 4. `.dtype` — Data Type of Elements
-```bash
+```python
 arr.dtype
 ```
 Shows the data type (int32, float64, etc.).
 
 #### Example:
-```bash
+```python
 np.array([1, 2, 3]).dtype  # dtype('int64') (depends on system)
 ```
 <br>
@@ -66,14 +66,14 @@ np.array([1, 2, 3]).dtype  # dtype('int64') (depends on system)
 
 
 ## 5. `.itemsize` — Size (in bytes) of One Element
-```bash
+```python
 arr.itemsize
 ```
 Shows how many bytes each element occupies.
 
 #### Example:
 
-```bash
+```python
 np.array([1, 2, 3], dtype=np.int32).itemsize  # 4
 ```
 <br>
@@ -81,13 +81,13 @@ np.array([1, 2, 3], dtype=np.int32).itemsize  # 4
 
 
 ## 6. `.T` — Transpose of the Array
-```bash
+```python
 arr.T
 ```
 Transposes the array (useful for matrices).
 
 #### Example:
-```bash
+```python
 np.array([[1, 2], [3, 4]]).T  # [[1, 3], [2, 4]]
 ```
 <br>
@@ -96,12 +96,12 @@ np.array([[1, 2], [3, 4]]).T  # [[1, 3], [2, 4]]
 
 ## 7. `.real` and `.imag`
 Used for complex number arrays:
-```bash
+```python
 arr.real   # Real part
 arr.imag   # Imaginary part
 ```
 #### Example
-```bash
+```python
 arr = np.array([2 + 3j, 4 - 5j, 1 + 0j])
 
 arr.real     # [2.  4.  1.]
@@ -112,7 +112,7 @@ arr.imag     # [ 3. -5.  0.]
 <br>
 
 ## Example Summary:
-```bash
+```python
 import numpy as np
 
 a = np.array([[1, 2, 3], [4, 5, 6]])
