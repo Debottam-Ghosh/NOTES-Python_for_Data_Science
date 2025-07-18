@@ -7,7 +7,7 @@
 ## 1. Speed (Execution Time)
 **NumPy is written in C under the hood**. Operations like addition, multiplication, and matrix operations are executed using highly optimized native code.
 
-```bash
+```python
 # NumPy
 a = np.array([1, 2, 3])
 b = np.array([4, 5, 6])
@@ -22,7 +22,7 @@ b = [4, 5, 6]
 
 ## 2. Memory Efficiency
 NumPy arrays use contiguous memory blocks and store data compactly. **Lists store references to objects**, which takes more memory.
-```bash
+```python
 import numpy as np
 import sys
 
@@ -36,7 +36,7 @@ sys.getsizeof(lst)  # Larger
 
 ## 3. Multidimensional Support
 NumPy makes working with 2D and 3D arrays easy. Lists require manual nesting and custom logic.
-```bash
+```python
 # NumPy
 mat = np.array([[1, 2], [3, 4]])
 mat.T  # Transpose directly
@@ -48,7 +48,7 @@ list(zip(*mat))  # More work
 <br>
 
 ## 4. Vectorized Operations & Broadcasting
-```bash
+```python
 a = np.array([1, 2, 3])
 a * 2  # Output: [2 4 6] → Element-wise
 
@@ -60,7 +60,7 @@ a * 2  # Output: [1, 2, 3, 1, 2, 3] → Repetition, not multiplication
 
 ## 5. Rich Functionality
 NumPy has tons of mathematical, statistical, and linear algebra functions:
-```bash
+```python
 np.mean(arr), np.std(arr), np.dot(A, B), np.linalg.inv(A), ...
 ```
 <br>
