@@ -71,7 +71,7 @@ plt.title('Heatmap with Viridis')
 
 plt.show()
 ```
-<img width="1464" height="559" alt="image" src="https://github.com/user-attachments/assets/21e111be-9d83-4f57-910d-98670319c1b3" />
+<img width="1452" height="538" alt="image" src="https://github.com/user-attachments/assets/c8ea26a9-59fa-4f4a-a298-ffceb6a07261" />
 
 
 <br>
