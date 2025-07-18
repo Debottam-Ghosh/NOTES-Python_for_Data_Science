@@ -6,7 +6,7 @@
 
 # Indexing
 **1 Dimensional Array**
-```bash
+```python
 arr = np.array([10, 20, 30, 40])
 
 arr[0]       # 10
@@ -15,7 +15,7 @@ arr[-1]      # 40
 <br> 
 
 **2 Dimendional Array**
-```bash
+```python
 a = np.array([[1, 2, 3],
               [4, 5, 6]])
 
@@ -29,7 +29,7 @@ a[1][2]      # 6 (row 1, column 2)
 By Fancy Indexing, we can access some specific elements (more useful when we want to access disconitinous rows or columns like 1st, 3rd, and 5th) where normal indexing fails)
 
 ### 1D Example
-```bash
+```python
 import numpy as np
 
 a = np.array([10, 20, 30, 40, 50])
@@ -37,12 +37,12 @@ indices = [0, 2, 4]
 print(a[indices])  # Output: [10 30 50]
 ```
 **Or you can directly write:**
-```bash
+```python
 print(a[[0,2,4])  # Output: [10 30 50]
 ```
 
 ### 2D Example
-```bash
+```python
 b = np.array([[1, 2, 3],
               [4, 5, 6]])
 rows = [0, 1, 2]
@@ -52,7 +52,7 @@ print(b[rows, cols])  # Output: [2 3 6]
 ###### Note that `rows` and `columns` need to be of same length as it returns the (0,1), (1,0), (2,1) column
 
 ### Mixing Fancy Indexing and Slicing
-```bash
+```python
 a = np.arange(9).reshape(3, 3)
 print(a)
 # [[0 1 2]
@@ -72,7 +72,7 @@ print(a[[0, 2], 1:])
 **Boolean indexing** allows you to filter or select elements in a NumPy array based on conditions. 
 
 ### Basic Example (1D array)
-```bash
+```python
 import numpy as np
 
 a = np.array([10, 15, 20, 25, 30])
@@ -85,14 +85,14 @@ print(a[mask])     # [25 30]
 ```
 ###### Or directly:
 
-```bash
+```python
 print(a[a > 20])   # [25 30]
 ```
 
 <br>
 
 ### With 2D Arrays
-```bash
+```python
 b = np.array([[1, 2, 3],
               [4, 5, 6],
               [7, 8, 9]])
@@ -106,7 +106,7 @@ print(b[b > 5])
 <br>
 
 ### Boolean indexing with multiple conditions
-```bash
+```python
 a = np.array([5, 10, 15, 20, 25, 30, 35])
 
 # Use & for AND, | for OR, ~ for NOT
@@ -119,7 +119,7 @@ print(result)  # Output: [15 20 25]
 <br>
 
 ### Modify Values Using Boolean Indexing
-```bash
+```python
 a = np.array([1, 2, 3, 4, 5])
 a[a % 2 == 0] = -1  # Replace even numbers with -1
 print(a)  # Output: [ 1 -1  3 -1  5]
@@ -140,7 +140,7 @@ print(a)  # Output: [ 1 -1  3 -1  5]
 Slicing in NumPy allows you to extract sub-arrays using a concise syntax.
 
 ## 1 Dimensional Slicing
-```bash
+```python
 import numpy as np
 a = np.array([10, 20, 30, 40, 50])
 ```
@@ -161,7 +161,7 @@ a = np.array([10, 20, 30, 40, 50])
 <br>
 
 ## Slicing in 2D Arrays
-```bash
+```python
 b = np.array([[1, 2, 3],
               [4, 5, 6],
               [7, 8, 9]])
@@ -193,7 +193,7 @@ Unlike Python lists, NumPy is optimized to **avoid loops using vectorized operat
 <br>
 
 ## 1. Iterating Over 1D Arrays
-```bash
+```python
 import numpy as np
 
 a = np.array([10, 20, 30])
@@ -202,7 +202,7 @@ for item in a:
 ```
 
 **Output:**
-```bash
+```python
 10
 20
 30
@@ -211,7 +211,7 @@ for item in a:
 <br>
 
 ## 2. Iterating Over 2D Arrays (Row-wise)
-```bash
+```python
 a = np.array([[1, 2], [3, 4]])
 
 for row in a:
@@ -228,7 +228,7 @@ for row in a:
 
 ##  3. Iterating Over Each Element (Element-wise)
 **Use `np.nditer()`:**
-```bash
+```python
 for val in np.nditer(a):
     print(val)
 ```
