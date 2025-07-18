@@ -24,7 +24,7 @@ Two dimensions are compatible when:
 ![image](https://github.com/user-attachments/assets/9f74303a-41de-4b66-8b43-dc6cca9b9126)
 
 ### Example 1: Scalar and Array
-```bash
+```python
 import numpy as np
 a = np.array([1, 2, 3])
 b = 10
@@ -36,7 +36,7 @@ print(a + b)  # Output: [11 12 13]
 <br>
 
 ### Example 2: 2D and 1D
-```bash
+```python
 a = np.array([[1, 2, 3],
               [4, 5, 6]])
 
