@@ -202,7 +202,7 @@ for item in a:
 ```
 
 **Output:**
-```python
+```
 10
 20
 30
