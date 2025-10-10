@@ -4,7 +4,7 @@ This repository contains notes and code for each library for essential data scie
 <br>
 <br>
 
-### I have planned to cover he following topics one by one:
+### I have planned to cover the following topics one by one:
 <br>
 
 #### Core Libraries
